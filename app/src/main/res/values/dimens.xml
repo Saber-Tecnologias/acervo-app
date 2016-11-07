@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_view_formato_label_size">12sp</dimen>
+    <dimen name="card_view_formato_text_size">11sp</dimen>
+    <dimen name="card_view_tamanho_text_size">11sp</dimen>
+    <dimen name="text_vazia_size">14sp</dimen>
+    <dimen name="panel_menu_width">60dp</dimen>
+    <dimen name="panel_tagsview_margin">55dp</dimen>
+    <dimen name="title_grupos_view_size">15sp</dimen>
+    <dimen name="filtros_text_size">17sp</dimen>
+    <dimen name="searchview_width">300dp</dimen>
+    <dimen name="dialogs_default_width">450dp</dimen>
+    <dimen name="fab_margin_right">18dp</dimen>
+    <dimen name="fab_menu_items_distance">10dp</dimen>
+    <dimen name="fab_principal_margin">10dp</dimen>
+    <dimen name="texto_fab_menu_itens">21sp</dimen>
+    <dimen name="texto_para_fab_margin">7dp</dimen>
+    <dimen name="transferencia_item_padding">20dp</dimen>
+    <dimen name="recomendacoes_padding_label">20dp</dimen>
+    <dimen name="button_text_size">13sp</dimen>
+    <dimen name="detalhes_button_height">50dp</dimen>
+
+</resources>

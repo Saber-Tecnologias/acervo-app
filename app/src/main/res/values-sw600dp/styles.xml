@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="AppTheme.SearchViewMeuAcervo" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@null</item>
+        <item name="goIcon">@drawable/search_ic_meu_acervo</item>
+        <item name="closeIcon">@null</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:maxWidth">@dimen/searchview_width</item>
+        <item name="queryBackground">@android:color/white</item>
+        <item name="submitBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.SearchViewAcervoRemoto" parent="AppTheme.SearchViewMeuAcervo">
+        <item name="goIcon">@drawable/search_ic_acervo_remoto</item>
+    </style>
+
+</resources>

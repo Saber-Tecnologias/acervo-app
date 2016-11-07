@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:textColorHint">@android:color/background_dark</item>
+  </style>
+
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.SearchView">
+    <item name="searchIcon">@null</item>
+    <item name="goIcon">@drawable/search_ic_acervo_remoto</item>
+    <item name="closeIcon">@null</item>
+
+    <item name="iconifiedByDefault">false</item>
+    <item name="android:maxWidth">@dimen/searchview_width</item>
+    <item name="queryBackground">@android:color/white</item>
+    <item name="submitBackground">@android:color/white</item>
+
+    </style>
+
+</resources>

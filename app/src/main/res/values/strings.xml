@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Acervo App</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="tv_tipo">PDF</string>
+    <string name="tv_data">07/11/2014</string>
+    <string name="tv_tamanho">10 MB</string>
+    <string name="label_tipo">Tipo: </string>
+    <string name="label_tamanho">Tamanho: </string>
+    <string name="label_data">Data de publicação: </string>
+
+    <string name="search_hint">Pesquise aqui</string>
+    <string name="filtro_transferidos">Transferidos</string>
+    <string name="filtro_transferindo">Transferindo</string>
+
+    <string name="snackbar_item_movido_sucesso">"Item movido para %1$s com sucesso!"</string>
+    <string name="snackbar_itens_movidos_sucesso">Itens movidos para %1$s com sucesso!</string>
+    <string name="refresh">Sincronizar</string>
+    <string name="refreshing">Sincronizando</string>
+    <string name="grupodeprecated">Grupo não existe!</string>
+    <string name="voltar_meuacervo">Voltar para Meu Acervo</string>
+    <string name="transferencias">Transferências</string>
+    <string name="title_detalhes">Detalhes</string>
+
+    <string-array name="menu_textos">
+        <item>Meus Grupos</item>
+        <item>Texto</item>
+        <item>Áudio</item>
+        <item>Vídeo</item>
+        <item>Imagem</item>
+        <item>Transferidos</item>
+    </string-array>
+
+    <plurals name="excluir_grupo">
+        <item quantity="one">Este grupo possui %d item. O que você deseja fazer?</item>
+        <item quantity="other"> Este grupo possui %d itens. O que você deseja fazer?</item>
+    </plurals>
+
+    <plurals name="transferir_itens">
+        <item quantity="two">Transferir %d itens?</item>
+        <item quantity="other">Transferir %d itens?</item>
+    </plurals>
+
+    <plurals name="remover_item_meu_acervo_geral">
+        <item quantity="one">Este item será removido da \"Meu Acervo\" permanentemente.</item>
+        <item quantity="other">Estes itens serão removidos da \"Meu Acervo\" permanentemente.</item>
+    </plurals>
+
+    <plurals name="remover_item_meu_acervo_dispositivo">
+        <item quantity="one">Este item será removido deste dispositivo, mas permanecerá na \"Meu Acervo\".</item>
+        <item quantity="other">Estes itens serão removidos deste dispositivo, mas permanecerão na \"Meu Acervo\".</item>
+    </plurals>
+
+    <string name="fling_fab_description">Fling Floating Action Button</string>
+
+    <string name="fab_menu_textos">Texto</string>
+    <string name="fab_menu_videos">Vídeo</string>
+    <string name="fab_menu_audios">Áudio</string>
+    <string name="fab_menu_imagens">Imagem</string>
+    <string name="fab_menu_novo_grupo">Novo Grupo</string>
+
+
+    <string name="busca_text_vazio"><center>Nenhum resultado obtido.</center>
+    \nSugestões:
+    \n
+    \n- Certifique-se de que todas as palavras estão escritas corretamente.
+    \n- Tente Tags diferentes.</string>
+    <string name="aviso_titulo">Sem espaço</string>
+    <string name="aviso_texto">Libere um pouco de espaço e tente novamente.</string>
+    <string name="transferir_item">Transferir item?</string>
+
+    <string name="selecionar_todos">Selecionar</string>
+    <string name="mover_item">Mover</string>
+    <string name="remover_item">Remover</string>
+    <string name="transferir_item_action_mode">Transferir</string>
+    <string name="remover_itens_selecionados">Remover itens?</string>
+    <string name="suporte_dialog_title">Envie suas dúvidas, sugestões ou impressões.</string>
+    <string name="suporte_dialog_bt_positive">Enviar</string>
+    <string name="suporte_dialog_bt_negative">Cancelar</string>
+    <string name="creditos_dialog_bt_positive">Fechar</string>
+    <string name="bt_abrir_item_text">Abrir</string>
+    <string name="bt_cancelar_item_text">Cancelar</string>
+    <string name="progresso_transferindo">Transferindo ...</string>
+    <string name="bt_transferir_item_text">Transferir</string>
+    <string name="sync_dialog_title">Sincronizando</string>
+    <string name="sync_dialog_message">aguarde ...</string>
+    <string name="sync_dialog_bt_negative">Deixar para depois</string>
+
+</resources>

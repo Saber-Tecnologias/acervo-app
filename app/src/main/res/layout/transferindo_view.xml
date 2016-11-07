@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/acervo_app_gray"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:paddingBottom="10dp"
+        android:paddingRight="@dimen/transferencia_item_padding"
+        android:paddingLeft="@dimen/transferencia_item_padding"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+
+        android:layout_below="@+id/container_aviso">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:background="@color/acervo_app_gray"
+
+        android:id="@+id/container_aviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingEnd="21dp"
+        android:paddingRight="21dp"
+        android:paddingBottom="3dp"
+
+        android:visibility="gone">
+
+        <ImageView
+            android:background="@color/acervo_app_gray"
+
+            android:id="@+id/iv_aviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_atencao_acervoapp"
+            android:padding="15dp"
+
+            />
+
+        <TextView
+            android:background="@color/acervo_app_gray"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aviso_titulo"
+
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/iv_aviso"
+            android:layout_alignBottom="@id/iv_aviso"
+            android:layout_alignParentTop="true"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/iv_aviso"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:layout_below="@id/divider"
+            android:background="@color/acervo_app_gray"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp">
+            <TextView
+
+                android:id="@+id/tv_aviso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_texto"
+
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+
+                />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_tentar_novamente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentar de novo"
+                android:layout_below="@id/tv_aviso"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="false"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

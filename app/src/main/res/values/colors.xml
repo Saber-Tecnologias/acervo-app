@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="meu_acervo_primary">#8dbf67</color>
+    <color name="acervo_remoto_primary">#005aaa</color>
+    <color name="acervo_app_gray">#e6e7e8</color>
+    <color name="transferencias_color">#149b9e</color>
+    <color name="tipos_color">#f2a32c</color>
+    <color name="acervo_remoto_gray">#6e6b6e</color>
+    <color name="menu_principal_usuario">#6d6e71</color>
+    <color name="primaryColorDark">#000</color>
+    <color name="primaryColor">#27ade4</color>
+    <color name="delete_color">#f79674</color>
+    <color name="detalhes_color">#929496</color>
+    <color name="sombra_grupo_selecionado">#6e32e600</color>
+
+    <string-array name="temas_colors">
+        <item>#c1dfe9</item>
+        <item>#c2dfea</item>
+        <item>#92a7b0</item>
+        <item>#617075</item>
+        <item>#eeefd2</item>
+        <item>#e9ecc7</item>
+        <item>#757664</item>
+        <item>#d9d2cb</item>
+        <item>#cfc7be</item>
+        <item>#afb195</item>
+        <item>#954098</item>
+        <item>#e6dce9</item>
+        <item>#dfd2e3</item>
+        <item>#a79eaa</item>
+        <item>#706a72</item>
+        <item>#fff0b8</item>
+        <item>#feeda6</item>
+        <item>#bfb37d</item>
+        <item>#7f7754</item>
+        <item>#cbeaf2</item>
+        <item>#b9e3ed</item>
+        <item>#7da5af</item>
+        <item>#536e75</item>
+        <item>#ffecf5</item>
+        <item>#fddfef</item>
+        <item>#bea7b3</item>
+        <item>#7f7078</item>
+        <item>#dfe6d8</item>
+        <item>#d7e0cf</item>
+        <item>#a1a89b</item>
+        <item>#6c7068</item>
+        <item>#f5e1e2</item>
+        <item>#f1dadb</item>
+        <item>#b5a4a4</item>
+        <item>#756e75</item>
+        <item>#f1e8f1</item>
+        <item>#ede2ee</item>
+        <item>#b2aab3</item>
+        <item>#777277</item>
+        <item>#ffe0ef</item>
+        <item>#ffcbe4</item>
+        <item>#bf98ab</item>
+        <item>#806672</item>
+        <item>#ffe2d8</item>
+        <item>#ffcfbf</item>
+        <item>#bf9b8f</item>
+        <item>#806860</item>
+    </string-array>
+
+</resources>

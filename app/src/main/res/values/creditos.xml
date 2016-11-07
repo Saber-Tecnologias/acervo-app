@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="creditos_title"><big><b>FICHA TÉCNICA</b></big></string>
+<string name="creditos_text_pt1"><b>© 2016. Universidade Federal de Pernambuco</b>
+\n
+\nAcervo App
+\n
+\n<b>Universidade Federal de Pernambuco (UFPE)</b>
+\nReitor: Anísio Brasileiro de Freitas Dourado
+\n
+</string>
+
+<string name="creditos_text_pt2"><b>\nUniversidade Federal de Pernambuco / SABER Tecnologias Educacionais e Sociais</b>
+\nCoordenação: Cristine Martins Gomes de Gusmão
+\nCentro de Convenções (Teatro) da Universidade Federal de Pernambuco, Sala 04, Av. dos Reitores, s/n | Cidade Universitária | Recife – PE, CEP 50.741-000 | Fone: (81) 2126.8427
+\n
+\n<b><i><u>Equipe</u></i></b>
+\n
+\n<b>Coordenadora Geral</b>
+\nCristine Martins Gomes de Gusmão
+\n
+\n<b>Coordenador de Produção</b>
+\nJúlio Venâncio de Menezes Júnior
+\n
+\n<b>Web designer / Designer</b>
+\nRodrigo Cavalcanti Lins / Vinícius Haniere Saraiva Milfont
+\n
+\n<b>Desenvolvedores</b>
+\nJoão Paulo Tenório Trindade / Miguel Domingos de Santana Wanderley / João Leonardo Coutinho Viana Pereira / Ângelo de Sant\'Ana Santos Dias / Karine Galdino Maia Gomes / Marcos André Pereira Martins Filho / Bruna Carolina Baudel de Santana
+</string>
+
+</resources>

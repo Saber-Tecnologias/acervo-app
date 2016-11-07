@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/acervo_app_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            
+            >
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/cor"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp" >
+
+                        <TextView
+                            android:id="@+id/label_tamanho"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/label_tipo"
+                            android:layout_marginTop="22dp"
+                            android:text="Tamanho do Arquivo:"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <TextView
+                            android:id="@+id/label_instituicao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/label_tamanho"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="22dp"
+                            android:text="Instituição:"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_descricao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titulo"
+                            android:layout_marginTop="25dp"
+                            android:text="descricao"
+                            android:textColor="#939598"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <TextView
+                            android:id="@+id/label_tipo"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_descricao"
+                            android:layout_marginTop="25dp"
+                            android:text="Tipo de mídia:"
+                            android:textColorLink="#4d4d4f"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_tipo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/label_tipo"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@id/label_tipo"
+                            android:layout_toRightOf="@id/label_tipo"
+                            android:text="tipo"
+                            android:textColor="#4d4d4f"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_tamanho"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/label_tamanho"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@id/label_tamanho"
+                            android:layout_toRightOf="@id/label_tamanho"
+                            android:text="tamanho"
+                            android:textColor="#4d4d4f"
+                            android:textSize="16sp" />
+
+                        <TextView
+
+                            android:id="@+id/tv_instituicao"
+                            android:layout_below="@id/label_tamanho"
+                            android:layout_marginTop="22dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@id/label_instituicao"
+                            android:layout_toRightOf="@id/label_instituicao"
+                            android:text="instituicao"
+                            android:textColor="#4d4d4f"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/tv_titulo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Titulo"
+                            android:textColor="#4d4d4f"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"/>
+
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#ececec"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/tv_instituicao"
+                            />
+                        <android.support.v7.widget.AppCompatButton
+                            android:minWidth="100dp"
+                            android:id="@+id/tv_abrir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/detalhes_button_height"
+                            android:text="Abrir"
+                            android:textColor="#ffff"
+                            android:textSize="@dimen/button_text_size"
+                            android:minHeight="55dp"
+                            android:padding="15dp"
+                            android:gravity="center"
+                            android:textAllCaps="false"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/divider"
+
+                            android:layout_marginBottom="5dp"/>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/bt_excluir"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_abrir"
+                            android:layout_alignBottom="@id/tv_abrir"
+                            android:text="Excluir"
+                            android:textAllCaps="false"
+                            android:layout_toLeftOf="@id/tv_abrir"
+                            android:layout_toStartOf="@id/tv_abrir"
+                            android:textColor="#ffff"
+                            android:textSize="@dimen/button_text_size"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:padding="15dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

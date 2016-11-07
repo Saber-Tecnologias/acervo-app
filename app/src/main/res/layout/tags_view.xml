@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/shadow_grad_tags">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+		android:layout_marginBottom="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/bt_removeall"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_tag_close_all" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/bt_removeall"
+            android:layout_toStartOf="@id/bt_removeall"
+            android:background="#dcddde"
+             />
+
+        <jpttrindade.widget.tagview.TagView
+            xmlns:jptt="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tagview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/divider"
+            android:layout_toStartOf="@id/divider"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            jptt:tag_closeLeftPadding="4dp"
+            jptt:tag_closePadding="6dp"
+            jptt:tag_closeSrc="@drawable/ic_tag_close"
+            jptt:tag_cornerRadius="3dp"
+            jptt:tag_dividerBottomMargin="5dp"
+            jptt:tag_dividerColor="@android:color/background_light"
+            jptt:tag_dividerTopMargin="5dp"
+            jptt:tag_height="40dp"
+            jptt:tag_textBottomPadding="1dp"
+            jptt:tag_textColor="@android:color/white"
+            jptt:tag_textLeftPadding="7dp"
+            jptt:tag_textRightPadding="7dp"
+            jptt:tag_textSize="18sp"
+            jptt:tag_textTopPadding="1dp" />
+    </RelativeLayout>
+
+</LinearLayout>

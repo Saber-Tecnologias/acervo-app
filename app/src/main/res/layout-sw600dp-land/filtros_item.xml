@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"    >
+
+    <RelativeLayout
+        android:id="@+id/iv_filtro_container"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_counter"
+            android:background="@drawable/transferindo_count"
+            android:layout_centerInParent="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_filtro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+
+            />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_filtro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/filtros_text_background_selector"
+        android:gravity="center_vertical"
+        android:textColor="@color/filtros_text_selector"
+        android:textSize="@dimen/filtros_text_size"
+        android:layout_toLeftOf="@id/iv_filtro_container"
+
+        />
+
+</RelativeLayout>

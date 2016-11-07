@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/excluir"
+        android:title="Excluir"/>
+    <item
+        android:id="@+id/detalhes"
+        android:title="Detalhes"/>
+    
+    <item 
+        android:id="@+id/transferir"
+        android:title="Transferir"
+        />
+
+</menu>

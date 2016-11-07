@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acervo_app_gray"
+    android:paddingTop="8dp"
+    >
+
+
+    <TextView
+
+        android:id="@+id/label_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Meus Grupos / "
+        android:background="@color/acervo_app_gray"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:textStyle="bold" />
+    <TextView
+
+        android:layout_toRightOf="@id/label_titulo"
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/acervo_app_gray"
+
+        android:textStyle="bold" />
+
+   <!-- <View
+        android:id="@+id/cor"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/tv_titulo"
+        android:background="@android:color/holo_blue_dark"/>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/acervo_app_gray"
+
+        android:id="@+id/rv_itens"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_titulo"
+        android:paddingEnd="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:paddingStart="25dp" />
+
+</RelativeLayout>

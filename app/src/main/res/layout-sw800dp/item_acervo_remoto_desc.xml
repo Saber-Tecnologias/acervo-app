@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/label_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tipo"
+        android:textColor="@color/acervo_remoto_gray"
+        android:textSize="@dimen/card_view_formato_label_size" />
+
+    <TextView
+        android:id="@+id/tv_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/label_tipo"
+        android:layout_toRightOf="@id/label_tipo"
+        android:text="@string/tv_tipo"
+        android:textColor="@color/acervo_remoto_gray"
+        android:textSize="@dimen/card_view_formato_text_size" />
+
+    <TextView
+        android:id="@+id/label_tamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/tv_tipo"
+        android:layout_toRightOf="@id/tv_tipo"
+        android:text="@string/label_tamanho"
+        android:textColor="@color/acervo_remoto_gray"
+        android:textSize="@dimen/card_view_formato_label_size" />
+
+    <TextView
+        android:id="@+id/tv_tamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/label_tamanho"
+        android:layout_toRightOf="@id/label_tamanho"
+        android:text="@string/tv_tamanho"
+        android:textColor="@color/acervo_remoto_gray"
+        android:textSize="@dimen/card_view_tamanho_text_size" />
+
+    <TextView
+        android:id="@+id/label_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_below="@id/label_tipo"
+        android:text="@string/label_data"
+        android:textColor="@color/acervo_remoto_gray"
+        android:textSize="@dimen/card_view_formato_label_size" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/label_data"
+        android:layout_toRightOf="@id/label_data"
+        android:layout_alignBottom="@id/label_data"
+        android:text="@string/tv_data"
+        android:textColor="@color/acervo_remoto_gray"
+        android:textSize="@dimen/card_view_tamanho_text_size" />
+
+</RelativeLayout>

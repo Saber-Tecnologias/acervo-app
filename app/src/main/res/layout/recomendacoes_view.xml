@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acervo_app_gray">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <!-- imagem? logo? texto? -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sabertecnologias"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="@dimen/recomendacoes_padding_label"
+                android:paddingStart="@dimen/recomendacoes_padding_label"
+                android:paddingLeft="@dimen/recomendacoes_padding_label"
+                android:paddingTop="15dp">
+                <TextView
+                    android:id="@+id/label_titulo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Label_titulo1"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="mais"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="215dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progress1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="@dimen/recomendacoes_padding_label"
+                android:paddingRight="@dimen/recomendacoes_padding_label"
+                android:paddingStart="@dimen/recomendacoes_padding_label"
+                android:paddingLeft="@dimen/recomendacoes_padding_label"
+                android:paddingTop="15dp">
+                <TextView
+                    android:id="@+id/label_titulo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Label_titulo2"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="mais"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="215dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progress2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="@dimen/recomendacoes_padding_label"
+                android:paddingRight="@dimen/recomendacoes_padding_label"
+                android:paddingStart="@dimen/recomendacoes_padding_label"
+                android:paddingLeft="@dimen/recomendacoes_padding_label"
+                android:paddingTop="15dp">
+                <TextView
+                    android:id="@+id/label_titulo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Label_titulo3"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="mais"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="215dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progress3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

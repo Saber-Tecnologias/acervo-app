@@ -1,0 +1,81 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="searchViewStyle">@style/AppTheme.SearchViewMeuAcervo</item>
+        <item name="navigationIcon">@drawable/ic_arrow_left</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/GrupoSelecionadoTheme.ActionMode</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_arrow_left</item>
+        <item name="actionOverflowButtonStyle">@style/Overflow.ActionMode</item>
+    </style>
+
+    <style name="GrupoSelecionadoTheme.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/meu_acervo_primary</item>
+        <item name="titleTextStyle">@style/TextAppearanceGrupoSelecionado.ActionMode</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearanceGrupoSelecionado.ActionMode" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Overflow.ActionMode" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow_white_24dp</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--
+         colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets
+        -->
+        <item name="colorAccent">#123</item>
+
+        <!--
+         You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight & colorSwitchThumbNormal.
+        -->
+    </style>
+
+    <style name="Theme_Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">#4D000000</item>
+    </style>
+
+    <style name="AppTheme.SearchViewMeuAcervo" parent="Widget.AppCompat.SearchView.ActionBar">
+        <item name="searchIcon">@null</item>
+        <item name="goIcon">@drawable/search_ic_meu_acervo</item>
+        <item name="closeIcon">@null</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="queryBackground">@android:color/white</item>
+        <item name="submitBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.SearchViewAcervoRemoto" parent="AppTheme.SearchViewMeuAcervo">
+        <item name="goIcon">@drawable/search_ic_acervo_remoto</item>
+    </style>
+
+        <!--
+         The default state of the SearchView. If true, it will be iconified when not in
+         use and expanded when clicked.
+        -->
+
+       <!-- Acervo Remoto theme. -->
+    <style name="AcervoRemotoTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/acervo_remoto_primary</item>
+        <item name="colorPrimaryDark">@color/acervo_remoto_primary</item>
+        <item name="searchViewStyle">@style/AppTheme.SearchViewAcervoRemoto</item>
+    </style>
+
+</resources>

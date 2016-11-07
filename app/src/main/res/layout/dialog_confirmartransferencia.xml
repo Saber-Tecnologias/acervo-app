@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="14dp"
+    android:paddingEnd="13dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingStart="13dp"
+    android:paddingTop="14dp" >
+
+    <TextView
+        android:id="@+id/label_titulo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="@string/transferir_item"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_toEndOf="@id/label_titulo"
+        android:layout_toRightOf="@id/label_titulo"
+        android:src="@drawable/ic_tag_close_all" />
+
+    <TextView
+        android:id="@+id/tv_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/iv_close"
+        android:layout_alignRight="@id/label_titulo"
+        android:layout_below="@id/label_titulo"
+        android:layout_marginBottom="10dp"
+        android:text="Esta operação pode ter um alto consumo de dados da rede. "/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_confirmar_transferir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/iv_close"
+        android:layout_alignRight="@id/iv_close"
+        android:layout_below="@id/tv_mensagem"
+        android:textAllCaps="false"
+        android:text="Confirmar"
+        android:padding="15dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

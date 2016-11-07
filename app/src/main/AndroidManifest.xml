@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufpe.sabertecnologias.acervoapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="br.ufpe.sabertecnologias.acervoapp.modelo.Facade"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="br.ufpe.sabertecnologias.acervoapp.modelo.repositorios.RecentSearchProvider"
+            android:authorities="br.ufpe.sabertecnologias.acervoapp.repositorios.RecentSearchProvider" />
+
+        <activity
+            android:name="br.ufpe.sabertecnologias.acervoapp.ui.ActivityInicial"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.ufpe.sabertecnologias.acervoapp.ui.autenticacao.ActivityAutenticacao"
+            android:label="@string/app_name"
+            />
+        <activity
+            android:name="br.ufpe.sabertecnologias.acervoapp.ui.tablet.MultiPaneActivityAcervoRemoto"
+            android:launchMode="singleTop"
+            android:theme="@style/AcervoRemotoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.ufpe.sabertecnologias.acervoapp.ui.tablet.MultiPaneActivityAcervoRemoto" />
+        </activity>
+
+        <activity
+            android:name="br.ufpe.sabertecnologias.acervoapp.ui.phone.ActivityAcervoRemoto"
+            android:launchMode="singleTop"
+            android:theme="@style/AcervoRemotoTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+        </activity>
+        <activity
+            android:name="br.ufpe.sabertecnologias.acervoapp.ui.phone.ActivityMeuAcervo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.ufpe.sabertecnologias.acervoapp.ui.phone.ActivityMeuAcervo" />
+        </activity>
+
+        <activity
+            android:name="br.ufpe.sabertecnologias.acervoapp.ui.tablet.MultiPaneActivityMeuAcervo"
+            android:launchMode="singleTop"
+            android:theme="@style/AcervoRemotoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="br.ufpe.sabertecnologias.acervoapp.ui.ActivityTutorial" />
+        <activity android:name="br.ufpe.sabertecnologias.acervoapp.ui.phone.ActivityTransferencias" />
+        <activity android:name="br.ufpe.sabertecnologias.acervoapp.ui.phone.ActivityDetalhes" />
+
+        <!-- Receiver do Alarme -->
+        <receiver android:name="br.ufpe.sabertecnologias.acervoapp.ui.autenticacao.AuthSessionExpiredReceiver" />
+        <receiver android:name="br.ufpe.sabertecnologias.acervoapp.util.BroadcastAtivaAlarme">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="br.ufpe.sabertecnologias.acervoapp.negocio.sincronizacao.STARTALARME_ATTLISTAITENS" />
+                <action android:name="br.ufpe.sabertecnologias.acervoapp.negocio.sincronizacao.STARTALARME_SETUPSERVER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.setup_server.BroadcastSetupServer" />
+        <receiver android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.sync.BroadcastSync" />
+        <receiver
+            android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.sync.SyncService$ReceiverRedeDisponivelSync"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="bandroid.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.setup_server.SetupServerService$ReceiverRedeDisponivelSetupServer"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="bandroid.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.acervo_remoto.ReceiverStatusDownloadItem">
+            <intent-filter>
+                <action android:name="br.saber.downloadservice.download_terminated_action" />
+                <action android:name="br.saber.downloadservice.download_started_action" />
+                <action android:name="br.saber.downloadservice.download_canceled_action" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.meu_acervo.ReceiverStatusMemoriaDownload">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="br.saber.downloadService.STORAGE_FULL" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.meu_acervo.ServiceAtualizaStatusItem" />
+        <service android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.sync.SyncService" />
+        <service android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.setup_server.SetupServerService" />
+        <service android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.setup_server.ServiceAtivaAlarmeSetupServer" />
+        <service
+            android:name="br.ufpe.sabertecnologias.acervoapp.modelo.negocio.meu_acervo.ServiceStatusMemoriaDownload"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

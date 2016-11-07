@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+   	<dimen name="card_view_formato_label_size">19sp</dimen>
+	<dimen name="card_view_formato_text_size">18sp</dimen>
+	<dimen name="card_view_tamanho_text_size">18sp</dimen>
+    <dimen name="panel_menu_width">240dp</dimen>
+    <dimen name="panel_tagsview_margin">230dp</dimen>
+	<dimen name="searchview_width">400dp</dimen>
+
+</resources>

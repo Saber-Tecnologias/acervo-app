@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_filtro"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/filtros_text_background_selector"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingStart="24dp"
+        android:textColor="@color/filtros_text_selector"
+        android:textSize="@dimen/filtros_text_size" />
+
+</LinearLayout>

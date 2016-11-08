@@ -25,9 +25,9 @@ Júlio Venâncio de Menezes Júnior
 Rodrigo Cavalcanti Lins / Vinícius Haniere Saraiva Milfont / Amarílis Ágata da Silva / Silvânia Cosmo Esmerindo Vieira  
   
 **Desenvolvedores**  
-João Paulo Tenório Trindade / Miguel Domingos de Santana Wanderley / 
-João Leonardo Coutinho Viana Pereira / Ângelo de Sant'Ana Santos Dias / 
-Karine Galdino Maia Gomes / Marcos André Pereira Martins Filho / Bruna Carolina Baudel de Santana
+[João Paulo Tenório Trindade][jptt] / [Miguel Domingos de Santana Wanderley][mdsw] / 
+[João Leonardo Coutinho Viana Pereira][jlcvp] / Ângelo de Sant'Ana Santos Dias / 
+[Karine Galdino Maia Gomes][kgmg] / [Marcos André Pereira Martins Filho][mapmf] / [Bruna Carolina Baudel de Santana][bcbs]
 
 
 ## Guia de uso
@@ -46,3 +46,14 @@ Clone este repositório localmente utilizando git
 
 Abra o projeto no Android Studio, execute o gradle sync para download de dependências e em seguida execute a instalaçao com
 `Run -> Run (Shift+F10 ou atalho personalizado)`
+
+[//]: # (Referências e URLS)
+
+[jlcvp]: https://github.com/jlcvp
+[jptt]: https://github.com/jpttrindade
+[mdsw]: https://github.com/migueldsw
+[bcbs]: https://github.com/brunabaudel
+[kgmg]: https://github.com/karinegmg
+[mapmf]: https://github.com/mapmf
+
+[//]: # (Fim de referências de url)

@@ -22,12 +22,19 @@ Cristine Martins Gomes de Gusmão
 Júlio Venâncio de Menezes Júnior  
   
 **Web designers / Designers**  
-Rodrigo Cavalcanti Lins / Vinícius Haniere Saraiva Milfont / Amarílis Ágata da Silva / Silvânia Cosmo Esmerindo Vieira  
+Rodrigo Cavalcanti Lins  
+Amarílis Ágata da Silva  
+Silvânia Cosmo Esmerindo Vieira  
+Vinícius Haniere Saraiva Milfont  
   
 **Desenvolvedores**  
-[João Paulo Tenório Trindade][jptt] / [Miguel Domingos de Santana Wanderley][mdsw] / 
-[João Leonardo Coutinho Viana Pereira][jlcvp] / Ângelo de Sant'Ana Santos Dias / 
-[Karine Galdino Maia Gomes][kgmg] / [Marcos André Pereira Martins Filho][mapmf] / [Bruna Carolina Baudel de Santana][bcbs]
+[João Paulo Tenório Trindade][jptt]  
+[Miguel Domingos de Santana Wanderley][mdsw]  
+[João Leonardo Coutinho Viana Pereira][jlcvp]  
+[Ângelo de Sant'Ana Santos Dias][assd]  
+[Karine Galdino Maia Gomes][kgmg]  
+[Marcos André Pereira Martins Filho][mapmf]  
+[Bruna Carolina Baudel de Santana][bcbs]  
 
 
 ## Guia de uso
@@ -55,5 +62,6 @@ Abra o projeto no Android Studio, execute o gradle sync para download de depend�
 [bcbs]: https://github.com/brunabaudel
 [kgmg]: https://github.com/karinegmg
 [mapmf]: https://github.com/mapmf
+[assd]: https://github.com/angelodias
 
 [//]: # (Fim de referências de url)
